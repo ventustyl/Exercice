@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, "sans-serif";
+}
+
+body {
+  background-color: #f4f4f4;
+
+  form {
+    width: clamp(300px, 50%, 500px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    border: #192de0 1px solid;
+    border-radius: 20px;
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label,
+    input {
+      margin-top: 10px;
+    }
+    input {
+      padding: 5px;
+    }
+  }
+  p {
+    text-align: center;
+    margin: 10px;
+    font-size: 1.2rem;
+  }
+  li {
+    list-style: none;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+}

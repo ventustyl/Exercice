@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carnet de note</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="form" action="./function.php" method="POST">
+      <h1>Carnet de note</h1>
+      <label for="firstName">Prénom de l'élève</label>
+      <input
+        maxlength="50"
+        type="text"
+        required
+        id="firstName"
+        placeholder="Entrer votre prénom"
+        pattern="[A-Za-z-éèêëÉÈ]+"
+      />
+      <label for="lastName">Nom de l'élève</label>
+      <input
+        maxlength="50"
+        type="text"
+        required
+        id="lastName"
+        placeholder="Entrer votre nom"
+        pattern="[A-Za-z-éèêëÉÈ]+"
+      />
+      <label for="grade1">Note n°1 /20</label>
+      <input
+        type="number"
+        id="grade1"
+        min="0"
+        max="20"
+        step="0.25"
+        placeholder="Veuillez entrer une note de 0 à 20"
+        required
+      />
+      <label for="grade2">Note n°2 /20</label>
+      <input
+        type="number"
+        id="grade2"
+        min="0"
+        max="20"
+        step="0.25"
+        placeholder="Veuillez entrer une note de 0 à 20"
+        required
+      />
+      <input type="submit" value="Valider" />
+    </form>
+    <p class="result"></p>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script src="script.js"></script>
+</html>
