@@ -24,12 +24,19 @@ Pour exécuter ce projet, assurez-vous d'avoir :
 - Créer une base de données pro_note
 - Créer la table students et ses propriétés avec la requête SQL suivante :
     -  `CREATE TABLE students (`
+      
           `id INT AUTO_INCREMENT PRIMARY KEY, -- Identifiant unique`
+       
           `firstName VARCHAR(255) NOT NULL,  -- Prénom`
+       
           `lastName VARCHAR(255) NOT NULL,   -- Nom`
+       
           `grade1 FLOAT NOT NULL,            -- Note 1`
+       
           `grade2 FLOAT NOT NULL,            -- Note 2`
+       
           `average FLOAT AS ((grade1 + grade2) / 2) STORED -- Moyenne calculée`
+       
 `);`
 - Un navigateur moderne pour afficher et interagir avec le contenu.
 
