@@ -20,7 +20,7 @@ Exercice Main est un petit projet interactif développé en HTML, CSS, JavaScrip
 
 Pour exécuter ce projet, assurez-vous d'avoir :
 
-- Un serveur local pour exécuter les scripts PHP.
+- Un serveur local pour exécuter les scripts PHP (XAMPP WAMP, MAMP, ...).
 - Créer une base de données pro_note
 - Créer la table students et ses propriétés avec la requête SQL suivante :
     -  `CREATE TABLE students (`
